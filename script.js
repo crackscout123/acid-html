@@ -2,8 +2,8 @@
 
 console.clear();
 var O = 0;
-var POINT_SIZE = 25;
-var POINT_DENSITY = 0.02;
+var POINT_SIZE = 12;
+var POINT_DENSITY = 0.08;
 
 function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
@@ -28,8 +28,8 @@ Scene = function () {
     count) {
       var getRandomPlanePosition = function getRandomPlanePosition() {
         return [
-        getRandomArbitrary(0, 5),
-        getRandomArbitrary(0, 1)];
+        getRandomArbitrary(0, 1),
+        getRandomArbitrary(0, 5)];
 
       };
 
@@ -88,7 +88,7 @@ var c = document.getElementById('canv'),
 $ = c.getContext('2d'),
 w = c.width = window.innerWidth,
 h = c.height = window.innerHeight,
-t = 0,num = 500,u = 0,
+t = 0,num = 512,u = 0,
 s,a,b,
 x,y,_x,_y,
 _t = 1 / 53;
